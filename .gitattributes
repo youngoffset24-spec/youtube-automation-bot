@@ -1,0 +1,16 @@
+# Language detection rules
+# Default behavior
+# Exclude build artifacts
+public/index.html linguist-vendored
+*.min.css linguist-generated
+* text=auto
+
+public/**/*.html linguist-vendored
+**/*.js linguist-detectable   
+*.yaml linguist-detectable=false
+src/**/*.js linguist-detectable
+
+* text=auto eol=lf
+*.jpeg binary
+*.min.js linguist-generated
+*.map linguist-generated
